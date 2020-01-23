@@ -1,0 +1,11 @@
+version: "3.0"
+
+services: 
+  nginx-angular:
+    container_name: web
+    build: 
+      context: angular-frontend/
+  dotnet-api:
+    container_name: api
+    build: 
+        context: dotnet-api
